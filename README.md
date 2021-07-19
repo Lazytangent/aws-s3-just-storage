@@ -3,6 +3,17 @@
 A guide to set up Amazon Web Services' Simple Storage Service to house some
 content without using it for user uploads in an application.
 
+## Why?
+
+Why would you want to use an AWS S3 Bucket? While Heroku's PostgreSQL database
+is good for storing most of your data in an organized format, it's not optimized
+for large file storage, and that includes images and music files, files that you
+might want to use in your application. AWS's S3 is an object storage service
+which allows you to store images, music files, or any other kind of large file
+that PostgreSQL wouldn't be able to store well. Using AWS or some other content
+delivery network (CDN) will allow you to use larger files without impacting your
+application's performance in a negative way.
+
 ## Create your AWS S3 Bucket
 
 Navigate to the [AWS Console], create an account if you haven't used AWS yet, or
