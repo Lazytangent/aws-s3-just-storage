@@ -3,9 +3,7 @@
 A guide to set up Amazon Web Services' Simple Storage Service to house some
 content without using it for user uploads in an application.
 
-## Setup
-
-### Create your AWS S3 Bucket
+## Create your AWS S3 Bucket
 
 Navigate to the [AWS Console], create an account if you haven't used AWS yet, or
 log in if you have. Once you are logged in there, you should have arrived on the
@@ -26,7 +24,37 @@ where the name is already taken, so be sure to choose a fairly unique name. If
 your bucket was created successfully, then you'll be taken back to the Amazon S3
 Buckets page.
 
+## Adding Images
 
+![aws-s3-bucket-before-upload]
+
+Select the bucket that you just made. On the next page, you can click either
+"**Upload**" button. It will direct you to a page where you can upload files
+and/or folders to your bucket. On this next page, use the "**Add files**"
+button, "**Add folder**" button, or drag and drop your files to start the upload
+process.
+
+![aws-s3-upload]
+
+If you want these resources to be available publicly, which you probably do,
+then open up the "Permissions" details and choose the radio button by "Grant
+public-read access" to make the resources in this batch of uploads readable by
+anyone with the link. Once you've confirmed that the current settings are all
+correct, click the "Upload" button at he bottom of the page.
+
+![aws-s3-upload-permissions]
+
+You should arrive at an upload status page, and it might take a second before
+your files get uploaded. Once the files have been successfully uploaded,
+
+![aws-s3-upload-status]
+
+![aws-s3-bucket-after-upload]
 
 [AWS Console]: https://s3.console.aws.amazon.com/s3/home
 [aws-s3-buckets-page]: ./assets/aws-s3-buckets-page.png
+[aws-s3-bucket-before-upload]: ./assets/aws-s3-bucket-before-upload.png
+[aws-s3-upload]: ./assets/aws-s3-upload.png
+[aws-s3-upload-permissions]: ./assets/aws-s3-upload-permissions.png
+[aws-s3-upload-status]: ./assets/aws-s3-upload-status.png
+[aws-s3-bucket-after-upload]: ./assets/aws-s3-bucket-after-upload.png
