@@ -19,10 +19,12 @@ provide hosting for some of the resources you have for seeders or something,
 you'll want to uncheck the checkbox that says "**Block *all* public access**".
 You'll need to also check the checkbox that appears after you've unchecked the
 previous one that says that you acknowledge that the "current settings might
-result in this bucket and the objects within becoming public." Scroll to the
-bottom and click "Create Bucket". You might run into an error where the name is
-already taken, so be sure to choose a fairly unique name. If your bucket was
-created successfully, then you'll be taken back to the Amazon S3 Buckets page.
+result in this bucket and the objects within becoming public."
+
+Scroll to the bottom and click "Create Bucket". You might run into an error
+where the name is already taken, so be sure to choose a fairly unique name. If
+your bucket was created successfully, then you'll be taken back to the Amazon S3
+Buckets page.
 
 
 
