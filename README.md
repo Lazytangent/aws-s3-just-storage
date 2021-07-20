@@ -65,6 +65,31 @@ just uploaded.
 
 ![aws-s3-bucket-after-upload]
 
+## Getting the URL to Use
+
+From your bucket page, click on the resource you want the URL for. This will
+direct you to the details page for this one object in your bucket. If you have
+already set the permissions in the last step to public, then you should be able
+to click on the blue URL under the "Object URL" label and view whatever resource
+it was. You can take that same URL and use it in your seeder files or wherever
+else you need this resource.
+
+![aws-s3-object-detail]
+
+If you later decide that the permissions on an object is not what you want it to
+be, come back to this detail page for that object, and click on the
+"Permissions" tab. Click the "Edit" button on the next page.
+
+![aws-s3-object-permissions]
+
+On the next page, "Edit access control list", you'll be able to check or uncheck
+checkboxes that will determine who can access your resources. Make sure that you
+also check the checkbox that says "I understand the effects of these changes on
+this object." to confirm the changes before you click on the "Save changes"
+button at the bottom of the page.
+
+![aws-s3-edit-acl]
+
 [AWS Console]: https://s3.console.aws.amazon.com/s3/home
 [aws-s3-buckets-page]: ./assets/aws-s3-buckets-page.png
 [aws-s3-bucket-before-upload]: ./assets/aws-s3-bucket-before-upload.png
@@ -72,3 +97,6 @@ just uploaded.
 [aws-s3-upload-permissions]: ./assets/aws-s3-upload-permissions.png
 [aws-s3-upload-status]: ./assets/aws-s3-upload-status.png
 [aws-s3-bucket-after-upload]: ./assets/aws-s3-bucket-after-upload.png
+[aws-s3-object-detail]: ./assets/aws-s3-object-detail.png
+[aws-s3-object-permissions]: ./assets/aws-s3-object-permissions.png
+[aws-s3-edit-acl]: ./assets/aws-s3-edit-acl.png
