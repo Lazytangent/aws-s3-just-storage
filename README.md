@@ -56,7 +56,10 @@ correct, click the "Upload" button at he bottom of the page.
 ![aws-s3-upload-permissions]
 
 You should arrive at an upload status page, and it might take a second before
-your files get uploaded. Once the files have been successfully uploaded,
+your files get uploaded. Once the files have been successfully uploaded, you can
+click on the "Close" button in the upper right hand corner of the page. This
+will take you back to your bucket's page, and it should show the items that were
+just uploaded.
 
 ![aws-s3-upload-status]
 
