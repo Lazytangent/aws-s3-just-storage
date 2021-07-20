@@ -85,10 +85,22 @@ be, come back to this detail page for that object, and click on the
 On the next page, "Edit access control list", you'll be able to check or uncheck
 checkboxes that will determine who can access your resources. Make sure that you
 also check the checkbox that says "I understand the effects of these changes on
-this object." to confirm the changes before you click on the "Save changes"
-button at the bottom of the page.
+this object" if you are changing permissions to allow for public read of the
+object to confirm the changes before you click on the "Save changes" button at
+the bottom of the page.
 
 ![aws-s3-edit-acl]
+
+You'll be taken back to your object's detail page if the changes were
+successfully changed, and you can use the "Object URL" in blue to test out
+whether the change was what you wanted it to be.
+
+If you've changed your permissions to make the object private read-only, meaning
+that only the creator and any accounts with the necessary permissions can view
+the file, then you should see something with "Access Denied" if you try opening
+the "Object URL" in a browser where you are not logged into your AWS account.
+
+![aws-s3-access-denied]
 
 [AWS Console]: https://s3.console.aws.amazon.com/s3/home
 [aws-s3-buckets-page]: ./assets/aws-s3-buckets-page.png
@@ -100,3 +112,4 @@ button at the bottom of the page.
 [aws-s3-object-detail]: ./assets/aws-s3-object-detail.png
 [aws-s3-object-permissions]: ./assets/aws-s3-object-permissions.png
 [aws-s3-edit-acl]: ./assets/aws-s3-edit-acl.png
+[aws-s3-access-denied]: ./assets/aws-s3-access-denied.png
